@@ -1,0 +1,17 @@
+.input-wrapper {
+  @apply flex rounded-md border-[#C8CED7] focus:rounded-md ;
+
+  > span {
+    @apply rounded-md bg-[#FBFDFF] p-3 ;
+
+  }
+
+  input {
+    @apply rounded-md bg-[#FBFDFF] p-3 border-[#C8CED7] text-base focus:border-none ;
+  }
+
+}
+
+.error-message {
+  @apply absolute text-[#ff4d4f] #{!important};
+}

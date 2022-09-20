@@ -1,0 +1,19 @@
+.textarea-wrapper {
+  @apply flex;
+
+  > textarea {
+
+    @apply
+    bg-[#FBFDFF]
+    text-[#1A1A1A]
+    rounded-md
+    border
+    text-base
+    text-gray-700
+    ;
+  }
+}
+
+.error-message {
+  @apply absolute text-[#ff4d4f] text-base #{!important};
+}

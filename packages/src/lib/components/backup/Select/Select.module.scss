@@ -1,0 +1,30 @@
+.select-wrapper {
+  @apply
+  p-0 #{!important};
+
+  div {
+    @apply
+    bg-[#FBFDFF]
+    text-[#1A1A1A]
+    text-base
+    rounded-md
+    h-[52px]
+    w-full
+    items-center #{!important};
+
+  }
+
+  &_dropdown_mobile {
+    @apply
+      relative
+      flex
+      justify-center
+      text-base
+      w-full
+      left-0
+      h-fit
+      bottom-0
+    #{!important};
+  }
+}
+
