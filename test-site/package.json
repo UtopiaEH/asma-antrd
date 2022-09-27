@@ -1,5 +1,5 @@
 {
-  "name": "asma-antrd-test-site",
+  "name": "test-site",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^4.23.2",
+    "asma-antrd": "*",
+    "clsx": "^1.2.1",
+    "lodash-es": "^4.17.21",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "asma-antrd":"*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
