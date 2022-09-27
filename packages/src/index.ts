@@ -1,5 +1,5 @@
 export * from './components'
 
-// import * as deprecated from './deprecated'
+import * as deprecated from './deprecated'
 
-// export { deprecated }
+export { deprecated }

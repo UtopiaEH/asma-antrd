@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "antd": "^4.23.2",
-    "asma-antrd": "*",
+    "antd-mobile": "^5.24.0",
+    "asma-antrd": "^0.0.4",
     "clsx": "^1.2.1",
     "lodash-es": "^4.17.21",
     "react": "^18.2.0",
