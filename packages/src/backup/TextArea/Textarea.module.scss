@@ -1,0 +1,16 @@
+.textarea-wrapper {
+    @apply flex;
+
+    > textarea {
+        @apply rounded-md
+    border
+    bg-[#FBFDFF]
+    text-base
+    text-[#1A1A1A]
+    text-gray-700;
+    }
+}
+
+.error-message {
+    @apply absolute text-base text-[#ff4d4f] #{!important};
+}

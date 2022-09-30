@@ -17,9 +17,13 @@
         "jsx": "react-jsx",
         "baseUrl": ".",
         "paths": {
-            "@ion.ciobanu.avanssoma/asma-antrd": ["./src/index.ts"]
-        }
+            "*": ["*"],
+            "@": ["src/*"],
+            "asma-antrd": ["src/index.ts"]
+        },
+        "plugins": [{ "name": "typescript-plugin-css-modules" }]
     },
+    "exclude": ["node_modules", "dist"],
     "include": ["./src"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }

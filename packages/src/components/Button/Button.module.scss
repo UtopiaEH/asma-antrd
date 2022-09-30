@@ -1,0 +1,113 @@
+[data-theme='fretex'] {
+    button.btn-wrapper {
+        @apply border-none     bg-transparent    shadow-none;
+    }
+
+    .icon-text {
+        @apply text-3xl;
+    }
+
+    .icon {
+        @apply text-xl;
+    }
+
+    button.btn-primary {
+        @apply flex h-10 min-w-min items-center justify-center		rounded border border-[#C8CED7]		bg-gama-500		text-base		hover:border-beta-700 hover:bg-beta-700 hover:text-white		focus:outline-none		sm:flex-col		xl:flex-row #{!important};
+
+        &:focus {
+            @apply border-[#C8CED7]      text-black      outline-0      #{!important};
+        }
+
+        &_disabled {
+            @apply hover:bg-gama-500      hover:text-black/25      hover:text-opacity-100               hover:opacity-100      #{!important};
+        }
+    }
+
+    button.btn-secondary {
+        @apply flex          h-10    min-w-min    items-center    justify-center   rounded    border    border-solid    border-[#C8CED7]    bg-white    text-base    hover:border-[#C8CED7]    hover:bg-[#ADC6BC]    hover:text-black    focus:outline-none    sm:flex-col     md:flex-col    xl:flex-row #{!important};
+
+        &:focus {
+            @apply border-[#C8CED7]      text-black      outline-0      #{!important};
+        }
+
+        &_disabled {
+            @apply hover:bg-white      hover:text-black/25      hover:text-opacity-100      hover:opacity-100      #{!important};
+        }
+    }
+}
+
+[data-theme='default'] {
+    button.btn-wrapper {
+        @apply border-none bg-transparent shadow-none;
+    }
+
+    .icon-text {
+        @apply text-3xl;
+    }
+
+    .icon {
+        @apply text-xl;
+    }
+
+    button.btn-primary {
+        @apply flex h-10 min-w-min items-center justify-center
+		rounded border border-[#C8CED7]
+		bg-gama-500
+		text-base text-textcolor-component
+		hover:border-beta-700 hover:bg-beta-700 hover:text-white
+		focus:outline-none
+		sm:flex-col
+		xl:flex-row #{!important};
+
+        &:focus {
+            @apply border-[#C8CED7]
+      text-black
+      outline-0
+      #{!important};
+        }
+
+        &_disabled {
+            @apply hover:bg-white
+      hover:text-black/25
+      hover:text-opacity-100
+      hover:opacity-100
+      #{!important};
+        }
+    }
+
+    button.btn-secondary {
+        @apply flex
+    h-10
+    min-w-min
+    items-center
+    justify-center
+    rounded
+    border
+    border-solid
+    border-[#C8CED7]
+    bg-white
+    bg-button-default-background
+    text-base
+    hover:border-[#C8CED7]
+    hover:bg-gama-700 hover:text-textcolor-component
+    focus:outline-none
+    sm:flex-col
+    md:flex-col
+    xl:flex-row #{!important};
+
+        &:focus {
+            @apply border-[#C8CED7]
+      text-black
+      outline-0
+      #{!important};
+        }
+
+        &_disabled {
+            @apply hover:bg-white
+      hover:text-black/25
+      hover:text-opacity-100
+      hover:opacity-100
+      #{!important};
+        }
+    }
+}

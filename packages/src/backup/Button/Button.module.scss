@@ -1,0 +1,38 @@
+button.btn-custom {
+    @apply mb-2
+  flex
+  min-w-min
+  items-center
+  justify-center
+  rounded
+  border
+  border-solid
+  border-[#C8CED7]
+  bg-white
+  text-base
+  hover:border-[#C8CED7]
+  hover:bg-[#ADC6BC]
+  hover:text-black
+  focus:outline-none
+  sm:flex-col
+  md:flex-col
+  xl:flex-row;
+
+    > button {
+        @apply rounded
+    border-none;
+    }
+
+    &:focus {
+        @apply border-[#C8CED7]
+    text-black
+    outline-0;
+    }
+}
+
+button.green {
+    @apply bg-[#ADC6BC]
+  hover:bg-[#A7241B]
+  hover:text-black
+  hover:text-white;
+}
