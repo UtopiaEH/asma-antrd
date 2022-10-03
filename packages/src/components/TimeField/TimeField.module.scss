@@ -34,6 +34,18 @@
 }
 
 .mobile-version {
+    div > div + div {
+        > div {
+            @apply flex-row-reverse;
+        }
+
+        @apply order-first w-auto;
+    }
+
+    div:last-child {
+        @apply divide-x;
+    }
+
     > div:nth-child(2) {
         > div {
             > div:nth-child(2) {
@@ -70,17 +82,5 @@
                 @apply h-full flex-none border-l-[0.5px] border-r-[0.5px] p-0;
             }
         }
-    }
-
-    div > div + div {
-        > div {
-            @apply flex-row-reverse;
-        }
-
-        @apply order-first w-auto;
-    }
-
-    div:last-child {
-        @apply divide-x;
     }
 }

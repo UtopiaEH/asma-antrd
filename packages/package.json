@@ -11,7 +11,7 @@
         "slint:fix": "stylelint --fix 'src/**/*.{css,scss}'",
         "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
         "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
-        "format": "prettier --write src//**/*.{ts,tsx,css,scss} --config ./.prettierrc.cjs",
+        "format": "prettier --write src//**/*.{ts,tsx,scss} --config ./.prettierrc.cjs",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
         "prepare": "cd .. && husky install packages/.husky"
@@ -69,6 +69,7 @@
         "sass": "^1.55.0",
         "stylelint": "^14.13.0",
         "stylelint-config-prettier": "^9.0.3",
+        "stylelint-config-prettier-scss": "^0.0.1",
         "stylelint-config-recommended": "^9.0.0",
         "stylelint-config-sass-guidelines": "^9.0.1",
         "stylelint-config-tailwindcss": "^0.0.6",
@@ -94,9 +95,7 @@
         }
     },
     "lint-staged": {
-        "src/**/*.{css,scss,sass,less}": "stylelint --fix",
         "src/**/*.{js,jsx,ts,tsx}": [
-            "yarn  tsc",
             "yarn  eslint",
             "yarn  format"
         ]

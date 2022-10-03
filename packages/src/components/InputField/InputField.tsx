@@ -5,7 +5,7 @@ import { omit } from 'lodash-es'
 import type { FC } from 'react'
 
 import { i18n } from '../helpers/i18n'
-import styles from './Input.module.scss'
+import styles from './InputField.module.scss'
 
 enum IconPositionEnum {
     Prefix = 'prefix',
@@ -23,7 +23,10 @@ interface InputField extends InputProps {
     iconPosition?: IconPositionEnum
 }
 
-const InputField: FC<InputField> = (props, { iconPosition = IconPositionEnum.Prefix }) => {
+const InputField: FC<InputField> = (
+    props,
+    { iconPosition = IconPositionEnum.Prefix }: { iconPosition: IconPositionEnum },
+) => {
     const isErrorOrNot = () => {
         if (props.is_error) {
             return 'error'
@@ -69,4 +72,4 @@ const InputField: FC<InputField> = (props, { iconPosition = IconPositionEnum.Pre
     )
 }
 
-export { InputField }
+export { IconPositionEnum, InputField }

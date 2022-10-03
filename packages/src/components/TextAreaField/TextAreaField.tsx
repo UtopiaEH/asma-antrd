@@ -27,6 +27,7 @@ const TextAreaField: FC<TextAreaField> = (props) => {
         }
         return undefined
     }
+
     return (
         <div className={styles['textarea-wrapper']}>
             <label className={styles['label-wrapper']}>

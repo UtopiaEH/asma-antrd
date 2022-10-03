@@ -6,7 +6,7 @@ import { clsx } from 'clsx'
 import { format, isValid } from 'date-fns'
 import { omit } from 'lodash-es'
 import moment from 'moment'
-import { useCallback, useState } from 'react'
+import { type FC, useCallback, useState } from 'react'
 
 import { mobileView, useWindowWidthSize } from '../helpers/hooks/useWindowWidthSize.hook'
 import { i18n } from '../helpers/i18n'
@@ -24,7 +24,9 @@ type IDateField = DatePickerProps & {
     locale: Locale
 }
 
-const DateField = (props: IDateField, { format_data = 'DD.MM.YYYY' }) => {
+export const defaultFormat = 'DD.MM.YYYY'
+
+const DateField: FC<IDateField> = (props, { format_data = defaultFormat }: { format_data: string }) => {
     const windowWidthSize = useWindowWidthSize()
     const isMobileView = mobileView(windowWidthSize)
 
