@@ -11,6 +11,7 @@ const meta: ComponentMeta<typeof DateFieldComponent> = {
     parameters: { actions: { argTypesRegex: '^on.*' } },
     argTypes: {
         onClick: { action: 'clicked' },
+        onChange: { action: 'changed' },
         onBlur: { action: 'blured' },
         onFocus: { action: 'focused' },
         // locale: {

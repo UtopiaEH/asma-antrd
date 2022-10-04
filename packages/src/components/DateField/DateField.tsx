@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react'
-import { type DatePickerProps, ConfigProvider, DatePicker } from 'antd'
+import { ConfigProvider, DatePicker } from 'antd'
+import type { DatePickerProps } from 'antd/es'
 import type { Locale } from 'antd/lib/locale-provider'
 import { DatePicker as DatePickerMobile } from 'antd-mobile'
 import { clsx } from 'clsx'
@@ -21,7 +22,7 @@ type IDateField = DatePickerProps & {
     error?: string
     is_error?: boolean
     is_warning?: boolean
-    locale: Locale
+    locale?: Locale
 }
 
 export const defaultFormat = 'DD.MM.YYYY'
