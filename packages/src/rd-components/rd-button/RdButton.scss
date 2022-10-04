@@ -1,19 +1,19 @@
-button.x-button-wrapper {
-    @apply shadow-x-shadow rounded-sm border border-transparent text-black transition duration-300 ease-in-out;
+button.rd-button-wrapper {
+    @apply rounded-sm border border-transparent text-black shadow-x-shadow transition duration-300 ease-in-out;
 
     &.ant-btn-default {
-        @apply hover:border-gama-600 hover:bg-gama-600
-        focus:border-gama-600 focus:bg-gama-600 active:border-gama-600
-        active:bg-gama-600 border-gama-500 
-        hover:text-textcolor-component focus:text-textcolor-component active:text-textcolor-component #{!important};
+        @apply border-gama-500 hover:border-gama-600
+        hover:bg-gama-600 hover:text-textcolor-component focus:border-gama-600
+        focus:bg-gama-600 focus:text-textcolor-component 
+        active:border-gama-600 active:bg-gama-600 active:text-textcolor-component #{!important};
     }
 
     &.ant-btn-primary {
         @apply text-textcolor-component;
-        @apply hover:bg-gama-600 active:bg-gama-600 bg-gama-500
-        text-textcolor-component hover:border-transparent
-        hover:text-textcolor-component focus:border-gama-700
-        focus:bg-gama-500;
+        @apply bg-gama-500 text-textcolor-component hover:border-transparent
+        hover:bg-gama-600 hover:text-textcolor-component
+        focus:border-gama-700 focus:bg-gama-500
+        active:bg-gama-600;
     }
 
     &:disabled,

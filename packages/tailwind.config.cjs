@@ -13,31 +13,37 @@ module.exports = {
             colors: {
                 'color-inherit': 'inherit',
                 'textcolor-default': 'var(--colors-text-default)',
-                'textcolor-component': 'var(--colors-text-component)', //white for advoca, black for fretex
-
+                // color themming variables
                 // fretex-slate
                 'alpha-100': 'var(--colors-alpha-100)',
                 'alpha-500': 'var(--colors-alpha-500)',
-                'alpha-600': 'var(--colors-alpha-600)', //skyline #0063db advoca /
-                'alpha-700': 'var(--colors-alpha-700)', //egyptian-blue #112bba advoca /
-
-                // fretex-red | advoca-green
+                'alpha-600': 'var(--colors-alpha-600)',
+                'alpha-700': 'var(--colors-alpha-700)',
+                // fretex-red
                 'beta-100': 'var(--colors-beta-100)',
                 'beta-500': 'var(--colors-beta-500)',
                 'beta-700': 'var(--colors-beta-700)',
-
                 // fretex-green
                 'gama-100': 'var(--colors-gama-100)',
                 'gama-200': 'var(--colors-gama-200)',
-                'gama-500': 'var(--colors-gama-500)',
+                'gama-300': 'var(--colors-gama-300)',
+                'gama-500': 'var(--colors-gama-500)', // default #1E7F4D //fretex #ADC6BC
+                'gama-600': 'var(--colors-gama-600)', // default #1b7245 //fretex #9BB1A8
                 'gama-700': 'var(--colors-gama-700)',
-
                 // fretex-gray
                 'delta-100': 'var(--colors-delta-100)',
                 'delta-200': 'var(--colors-delta-200)',
+                'delta-250': 'var(--colors-delta-250)',
                 'delta-300': 'var(--colors-delta-300)',
                 'delta-500': 'var(--colors-delta-500)',
-                'delta-700': 'var(--colors-delta-700)', //egyptian-blue #112bba advoca /
+                'delta-700': 'var(--colors-delta-700)',
+                'delta-800': 'var(--colors-delta-800)',
+                'delta-900': 'var(--colors-delta-900)',
+                'delta-9000': 'var(--colors-gray-9000)',
+                //
+                'textcolor-component': 'var(--colors-text-component)',
+                inherit: 'inherit',
+                //  // // // //
 
                 //  // // // // // //
                 // Calendar colors //
@@ -108,6 +114,7 @@ module.exports = {
                 popper: '0 4px 15px 0 rgba(0, 0, 0, 0.44)',
                 modal: '0px 0px 16px rgba(0, 0, 0, 0.1)',
                 'mobile-box': '0 2px 4px rgba(0, 0, 0, 0.12)',
+                'x-shadow': '2px 2px 8px rgba(0, 0, 0, 0.2)',
             },
             minHeight: {
                 1: '1rem',
