@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react'
 import { type ButtonProps, Button as AntButton } from 'antd'
+import type { SizeType } from 'antd/es/config-provider/SizeContext'
 import { clsx } from 'clsx'
 import { omit } from 'lodash-es'
 import type { FC } from 'react'
@@ -11,6 +12,8 @@ type IButtonCustom = ButtonProps & {
     btnType?: 'primary' | 'secondary' | 'ghost'
     title?: string
     classNameIcon?: string
+    disabled?: boolean
+    size?: SizeType
 }
 
 const Button: FC<IButtonCustom> = (props) => {

@@ -1,5 +1,3 @@
-const { EsLinter, linterPlugin } = require('vite-plugin-linter')
-
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
@@ -13,10 +11,6 @@ export default defineConfig((configEnv) => ({
     plugins: [
         react(),
         tsConfigPaths(),
-        linterPlugin({
-            include: ['./src}/**/*.{ts,tsx}'],
-            linters: [new EsLinter({ configEnv })],
-        }),
         dts({
             insertTypesEntry: true,
             include: resolve(__dirname, 'src'),
