@@ -27,12 +27,12 @@ interface ITimeField {
     error?: string
     is_error?: boolean
     is_warning?: boolean
-    lang: 'En' | 'No'
+    lang?: 'En' | 'No'
 }
 
 type TTimeFieldCustom = TimePickerProps & ITimeField
 
-const TimeField = (props: TTimeFieldCustom) => {
+const TimeField: React.FC<TTimeFieldCustom> = (props) => {
     const windowWidthSize = useWindowWidthSize()
     const isMobileView = mobileView(windowWidthSize)
 
