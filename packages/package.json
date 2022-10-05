@@ -1,7 +1,7 @@
 {
     "name": "asma-antrd",
     "private": false,
-    "version": "0.0.26",
+    "version": "0.0.27",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -60,6 +60,7 @@
         "husky": "^8.0.1",
         "less": "^4.1.3",
         "lint-staged": "^13.0.3",
+        "node-sass": "^7.0.3",
         "postcss": "^8.4.16",
         "prettier": "^2.7.1",
         "prettier-plugin-tailwindcss": "^0.1.13",
