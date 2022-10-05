@@ -1,9 +1,11 @@
 import { Button, ButtonProps } from 'antd'
 
-export const RdButton: React.FC<ButtonProps> = (props) => {
+const RdButton: React.FC<ButtonProps> = (props) => {
     return (
         <Button {...props} className={`rd-button-wrapper ${props.className ?? ''}`}>
             {props.children}
         </Button>
     )
 }
+
+export default RdButton

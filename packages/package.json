@@ -1,7 +1,7 @@
 {
     "name": "asma-antrd",
     "private": false,
-    "version": "0.0.21",
+    "version": "0.0.23",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -98,5 +98,9 @@
             "yarn  eslint",
             "yarn  format"
         ]
-    }
+    },
+    "sideEffects": [
+        "dist/*",
+        "*.css"
+    ]
 }
