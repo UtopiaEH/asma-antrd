@@ -1,3 +1,5 @@
+import './RdButton.scss'
+
 import { Button, ButtonProps } from 'antd'
 
 export const RdButton: React.FC<ButtonProps> = (props) => {
