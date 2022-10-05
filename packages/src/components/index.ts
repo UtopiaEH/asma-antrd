@@ -1,6 +1,7 @@
 export * from './Button'
 export * from './CheckBox'
 export * from './DateField'
+export * from './Dialog'
 export * from './InputField'
 export * from './LoadingOverlay'
 export * from './Modal'

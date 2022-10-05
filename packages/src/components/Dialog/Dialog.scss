@@ -1,0 +1,27 @@
+// antd confirm modal
+.antd-confirm-modal-body {
+    @apply min-h-[192px]  #{!important};
+
+    div.ant-modal-body {
+        @apply overflow-wrap-anywhere flex flex-auto flex-col items-center justify-center bg-transparent text-base font-normal;
+    }
+
+    div.ant-modal-content {
+        @apply flex min-h-[192px] flex-col rounded-lg;
+    }
+
+    div.ant-modal-footer {
+        @apply flex w-full border-none bg-transparent p-0;
+    }
+
+    button.antd-confirm-modal-body_cancel-button {
+        @apply h-[48px] flex-[50%] items-center
+        justify-center rounded-bl-lg border-t border-r border-t-delta-200
+        border-r-delta-200 text-base font-semibold;
+    }
+    button.antd-confirm-modal-body_confirm-button {
+        @apply h-[48px] flex-[50%] items-center justify-center
+        rounded-br-lg border-t border-t-delta-200
+        text-base font-semibold text-[#871E17];
+    }
+}
