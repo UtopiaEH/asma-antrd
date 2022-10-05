@@ -3,7 +3,7 @@ const defaultConfig = require('tailwindcss/defaultConfig')
 // if you use any key-pair from tailwind.config.js wrap the style in module!
 module.exports = {
     mode: 'jit',
-    content: ['index.html', 'src/**/*.tsx'],
+    content: ['index.html', 'src/**/*.{ts, tsx}'],
     theme: {
         fontFamily: {
             sans: ['Source Sans Pro', defaultConfig.theme.fontFamily.sans],

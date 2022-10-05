@@ -2,9 +2,9 @@ import { Icon } from '@iconify/react'
 import { clsx } from 'clsx'
 import type { FC } from 'react'
 
-import styles from './Loading.module.scss'
+import styles from './LoadingOverlay.module.scss'
 
-const Loading: FC<{ className?: string; iconClassName?: string }> = ({ className, iconClassName }) => {
+const LoadingOverlay: FC<{ className?: string; iconClassName?: string }> = ({ className, iconClassName }) => {
     return (
         <div className={clsx(styles['container'], className)}>
             <Icon icon={'line-md:loading-twotone-loop'} className={clsx(styles['iconName'], iconClassName)} />
@@ -12,4 +12,4 @@ const Loading: FC<{ className?: string; iconClassName?: string }> = ({ className
     )
 }
 
-export { Loading }
+export { LoadingOverlay }
