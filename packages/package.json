@@ -1,7 +1,7 @@
 {
     "name": "asma-antrd",
     "private": false,
-    "version": "0.0.23",
+    "version": "0.0.24",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -101,6 +101,7 @@
     },
     "sideEffects": [
         "dist/*",
-        "*.css"
+        "*.css",
+        "**/*/.css"
     ]
 }
