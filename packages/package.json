@@ -1,7 +1,7 @@
 {
     "name": "asma-antrd",
     "private": false,
-    "version": "0.0.32",
+    "version": "0.0.33",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -93,7 +93,8 @@
         ".": {
             "import": "./dist/asma-antrd.es.js",
             "require": "./dist/asma-antrd.umd.js"
-        }
+        },
+        "./dist/style.css": "./dist/style.css"
     },
     "lint-staged": {
         "src/**/*.{js,jsx,ts,tsx}": [
