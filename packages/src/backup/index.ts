@@ -1,7 +1,6 @@
 export * from './BasicButton'
 export * from './DateField'
 export * from './DefaultButton'
-export * from './Modal'
 export * from './PrimaryButton'
 export * from './SelectField'
 export * from './TextAreaField'
