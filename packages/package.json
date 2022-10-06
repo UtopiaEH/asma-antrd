@@ -101,10 +101,5 @@
             "yarn  eslint",
             "yarn  format"
         ]
-    },
-    "sideEffects": [
-        "dist/*",
-        "*.css",
-        "**/*/.css"
-    ]
+    }
 }
