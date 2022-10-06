@@ -22,6 +22,7 @@ export default defineConfig(() => ({
     build: {
         sourcemap: true,
         manifest: true,
+        minify: false,
         lib: {
             entry: resolve(__dirname, 'src/index.ts'),
             name: 'asma-antrd',
