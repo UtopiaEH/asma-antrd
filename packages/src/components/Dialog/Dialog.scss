@@ -3,7 +3,9 @@
     @apply min-h-[192px]  #{!important};
 
     div.ant-modal-body {
-        @apply overflow-wrap-anywhere flex flex-auto flex-col items-center justify-center bg-transparent text-base font-normal;
+        @apply flex flex-auto flex-col items-center justify-center bg-transparent text-base font-normal;
+        word-break: break-word !important; /* Chrome, Safari */
+        overflow-wrap: anywhere !important; /* Firefox */
     }
 
     div.ant-modal-content {
