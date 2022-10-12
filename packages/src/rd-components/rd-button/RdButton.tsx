@@ -11,7 +11,7 @@ const ButtonTemplate: React.FC<ButtonProps> = (props) => {
 
 export const RdButton = styled(ButtonTemplate)`
     border-radius: 3px;
-    border: transparent;
+    border: 1px solid transparent;
     color: black;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     transition: all 300ms ease-in-out;
@@ -26,7 +26,7 @@ export const RdButton = styled(ButtonTemplate)`
         }
         &:focus {
             background: var(--colors-gama-500);
-            border: var(--colors-gama-700);
+            border: 1px solid var(--colors-gama-700);
         }
         &:active {
             background: var(--colors-gama-600);
@@ -39,7 +39,7 @@ export const RdButton = styled(ButtonTemplate)`
         &:hover {
             color: var(--colors-text-component);
             background: var(--colors-gama-600);
-            border: var(--colors-gama-600);
+            border: 1px solid var(--colors-gama-600);
         }
         &:focus {
             color: var(--colors-text-component);
@@ -47,7 +47,7 @@ export const RdButton = styled(ButtonTemplate)`
         &:active {
             color: var(--colors-text-component);
             background: var(--colors-gama-600);
-            border: var(--colors-gama-600);
+            border: 1px solid var(--colors-gama-600);
         }
     }
 
