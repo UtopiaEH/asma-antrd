@@ -43,6 +43,8 @@ export const RdButton = styled(ButtonTemplate)`
         }
         &:focus {
             color: var(--colors-text-component);
+            background: var(--colors-gama-600);
+            border: 1px solid var(--colors-gama-600);
         }
         &:active {
             color: var(--colors-text-component);
