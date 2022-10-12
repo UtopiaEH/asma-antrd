@@ -1,7 +1,7 @@
 {
     "name": "asma-antrd",
     "private": false,
-    "version": "0.0.39",
+    "version": "0.0.40",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -22,11 +22,15 @@
     "license": "UNLICENSED",
     "dependencies": {
         "@headlessui/react": "^1.7.2",
+        "@types/styled-components": "^5.1.26",
         "antd": "^4.23.2",
         "antd-mobile": "^5.24.0",
+        "babel": "^6.23.0",
+        "babel-plugin-styled-components": "^2.0.7",
         "clsx": "^1.2.1",
         "lodash-es": "^4.17.21",
         "moment": "^2.29.4",
+        "styled-components": "^5.3.6",
         "vite-plugin-css-injected-by-js": "^2.1.0"
     },
     "devDependencies": {
