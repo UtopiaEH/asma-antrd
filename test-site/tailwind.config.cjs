@@ -7,6 +7,7 @@ module.exports = {
     theme: {
         fontFamily: {
             sans: ['Source Sans Pro', defaultConfig.theme.fontFamily.serif],
+            nova: ['Nova Mono', defaultConfig.theme.fontFamily.serif],
         },
         extend: {
             // do not create "black" "white", it affects headless ui components

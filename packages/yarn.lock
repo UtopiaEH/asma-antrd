@@ -3901,6 +3901,23 @@ arrify@^2.0.1:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-2.0.1.tgz#c9655e9331e0abcd588d2a7cad7e9956f66701fa"
   integrity sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
 
+asma-antrd@^0.0.43:
+  version "0.0.43"
+  resolved "https://registry.yarnpkg.com/asma-antrd/-/asma-antrd-0.0.43.tgz#78741cd129d86e1987a19d0eefc1dd2702212391"
+  integrity sha512-y2+I1Ay+MN61Aog4yoiOYp3AVoHBL4KGN5ug8l4pJtLKEE+sRA9ogiQMEOaXViwkr7QaILYlpyobZMJDeMzsJg==
+  dependencies:
+    "@headlessui/react" "^1.7.2"
+    "@types/styled-components" "^5.1.26"
+    antd "^4.23.2"
+    antd-mobile "^5.24.0"
+    babel "^6.23.0"
+    babel-plugin-styled-components "^2.0.7"
+    clsx "^1.2.1"
+    lodash-es "^4.17.21"
+    moment "^2.29.4"
+    styled-components "^5.3.6"
+    vite-plugin-css-injected-by-js "^2.1.0"
+
 asn1.js@^5.2.0:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/asn1.js/-/asn1.js-5.4.1.tgz#11a980b84ebb91781ce35b0fdc2ee294e3783f07"

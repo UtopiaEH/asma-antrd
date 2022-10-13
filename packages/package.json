@@ -25,6 +25,7 @@
         "@types/styled-components": "^5.1.26",
         "antd": "^4.23.2",
         "antd-mobile": "^5.24.0",
+        "asma-antrd": "^0.0.43",
         "babel": "^6.23.0",
         "babel-plugin-styled-components": "^2.0.7",
         "clsx": "^1.2.1",
@@ -105,5 +106,8 @@
             "yarn  eslint",
             "yarn  format"
         ]
+    },
+    "resolutions": {
+        "styled-components": "^5"
     }
 }
