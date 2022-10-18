@@ -9,11 +9,12 @@ export type IDangerButton = PropsWithChildren<{
     className?: string
     titleClassName?: string
     disabled?: boolean
+    onClick?: React.MouseEventHandler<HTMLButtonElement>
 }>
 
 const DangerButton: FC<IDangerButton> = (props) => {
     return (
-        <button className={clsx(styles['root'], props.className)} disabled={props.disabled}>
+        <button className={clsx(styles['root'], props.className)} disabled={props.disabled} onClick={props.onClick}>
             {!!props.title && <span className={clsx(styles['title'], props.titleClassName)}>{props.title}</span>}
             {props.children}
             {props.icon}
