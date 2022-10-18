@@ -16,6 +16,9 @@ type IButtonCustom = ButtonProps & {
     size?: SizeType
 }
 
+/**
+ * @deprecated use BasicButton, DangerButton
+ */
 const Button: FC<IButtonCustom> = (props) => {
     let _btnType: string | undefined = 'primary'
     let _btnTypeDisabled: string | undefined = undefined

@@ -1,0 +1,9 @@
+[data-theme='fretex'] {
+    // Buttons
+
+    --color--basic--button--background--default: var(--color-custom-green-light);
+    --color--basic--button--background--disabled: var(--colors-carasent--disabled--100);
+    --color--basic--button--background--active: var(--color-custom-green-normal);
+    --color--basic--button--background--focus: var(--color-custom-green-normal);
+    --color--basic--button--background--hover: var(--color-custom-green-lighter);
+}
