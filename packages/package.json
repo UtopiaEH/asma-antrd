@@ -1,7 +1,7 @@
 {
     "name": "asma-antrd",
     "private": false,
-    "version": "0.0.46",
+    "version": "0.0.47",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -13,8 +13,7 @@
         "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
         "format": "prettier --write src//**/*.{ts,tsx,scss} --config ./.prettierrc.cjs",
         "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook",
-        "prepare": "cd .. && husky install packages/.husky"
+        "build-storybook": "build-storybook"
     },
     "files": [
         "dist"
