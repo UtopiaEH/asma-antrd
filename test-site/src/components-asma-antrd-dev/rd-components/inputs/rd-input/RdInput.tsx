@@ -11,5 +11,7 @@ const inputStyle = {
 }
 
 export const RdInput = (props: InputProps & React.RefAttributes<InputRef>) => {
-    return <Input {...props} className={`${styles['ant-redesign']} ${props.className}`} style={inputStyle} />
+    return (
+        <Input {...props} className={`${styles['ant-redesign']} antrd-input ${props.className}`} style={inputStyle} />
+    )
 }
