@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     animation: {
         'opacity-in': 'opacity-in 0.150s ease-in',
     },

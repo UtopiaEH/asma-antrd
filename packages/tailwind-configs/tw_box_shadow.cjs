@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     blue: '0px 0px 5px #1890ff',
     red: '0px 0px 5px red',
     ash: '-1px 8px 18px -20px black',

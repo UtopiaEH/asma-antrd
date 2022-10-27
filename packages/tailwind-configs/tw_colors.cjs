@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     inherit: 'inherit',
     'textcolor-component': 'var(--colors-text-component)',
     'color-active-component': 'var(--colors-active-component)',

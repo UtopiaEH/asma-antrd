@@ -1,7 +1,7 @@
 {
     "name": "asma-antrd",
     "private": false,
-    "version": "0.0.56",
+    "version": "0.0.57",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -16,7 +16,8 @@
         "build-storybook": "build-storybook"
     },
     "files": [
-        "dist"
+        "dist",
+        "tailwind-configs"
     ],
     "license": "UNLICENSED",
     "dependencies": {
@@ -97,7 +98,8 @@
             "import": "./dist/asma-antrd.es.js",
             "require": "./dist/asma-antrd.umd.js"
         },
-        "./dist/style.css": "./dist/style.css"
+        "./dist/style.css": "./dist/style.css",
+        "./tailwind-configs/tw_configs.cjs": "./tailwind-configs/tw_configs.cjs"
     },
     "lint-staged": {
         "src/**/*.{js,jsx,ts,tsx}": [
