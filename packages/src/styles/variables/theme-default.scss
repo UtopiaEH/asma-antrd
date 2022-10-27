@@ -3,6 +3,12 @@
 
     --color-calendar-widget--title: hsl(var(--colors-cardea--black-002));
 
+    // Modal
+
+    // Modal Custom Header
+
+    --color--modal-custom-header--background--default: hsl(var(--color-custom-green-light));
+
     // Basic Button
 
     --color--basic--button--background--default: var(--colors-carasent--basic--500);
@@ -42,5 +48,4 @@
     --color--danger--button--text--active: var(--colors-cardea--white);
     --color--danger--button--text--focus: var(--colors-cardea--white);
     --color--danger--button--text--hover: var(--colors-cardea--white);
-    // Modal
 }
