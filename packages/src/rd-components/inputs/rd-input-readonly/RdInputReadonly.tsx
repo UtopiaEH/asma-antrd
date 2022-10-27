@@ -1,3 +1,5 @@
+import './RdInputReadonly.scss'
+
 import { Input, InputProps } from 'antd'
 
 export const RdInputReadonly: React.FC<InputProps> = (props) => {
