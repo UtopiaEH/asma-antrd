@@ -1,18 +1,41 @@
+import { clsx } from 'clsx'
+
 import { DangerButton } from '../DangerButton'
 import styles from './WidgetCard.module.scss'
 
-export const WidgetCard: React.FC<
-    React.PropsWithChildren<{ title?: string; actionTitle?: string; onActionHandler?: () => void | Promise<void> }>
-> = ({ children, title, actionTitle, onActionHandler }) => {
+export type WidgetCardProps = React.PropsWithChildren<{
+    containerClassName?: string
+    titleClassName?: string
+    actionsClassName?: string
+    actionTitleClassName?: string
+    title?: string
+    actionTitle?: string
+    onActionHandler?: () => void | Promise<void>
+}>
+
+export const WidgetCard: React.FC<WidgetCardProps> = ({
+    containerClassName,
+    titleClassName,
+    actionsClassName,
+    actionTitleClassName,
+    children,
+    title,
+    actionTitle,
+    onActionHandler,
+}) => {
     return (
-        <div className={styles['container']}>
-            {title && <span className={styles['title']}>{title}</span>}
+        <div className={clsx(styles['container'], containerClassName)}>
+            {title && <span className={clsx(styles['title'], titleClassName)}>{title}</span>}
 
             {children}
 
             {(actionTitle || onActionHandler) && (
-                <div className={styles['actions']}>
-                    <DangerButton className={styles['action']} onClick={onActionHandler} title={actionTitle} />
+                <div className={clsx(styles['actions'], actionsClassName)}>
+                    <DangerButton
+                        className={clsx(styles['action'], actionTitleClassName)}
+                        onClick={onActionHandler}
+                        title={actionTitle}
+                    />
                 </div>
             )}
         </div>
