@@ -1,3 +1,4 @@
+const twConfigs = require('./tailwind-configs/tw_configs.cjs')
 const defaultConfig = require('tailwindcss/defaultConfig')
 
 // if you use any key-pair from tailwind.config.js wrap the style in module!
@@ -11,54 +12,8 @@ module.exports = {
         extend: {
             // do not create "black" "white", it affects headless ui components
             colors: {
-                'color-inherit': 'inherit',
-                'textcolor-default': 'var(--colors-text-default)',
-                // alpha
-                'alpha-100': 'var(--colors-alpha-100)',
-                'alpha-500': 'var(--colors-alpha-500)',
-                'alpha-600': 'var(--colors-alpha-600)',
-                'alpha-700': 'var(--colors-alpha-700)',
-                // beta
-                'beta-100': 'var(--colors-beta-100)',
-                'beta-500': 'var(--colors-beta-500)',
-                'beta-700': 'var(--colors-beta-700)',
-                // gama
-                'gama-100': 'var(--colors-gama-100)',
-                'gama-200': 'var(--colors-gama-200)',
-                'gama-300': 'var(--colors-gama-300)',
-                'gama-500': 'var(--colors-gama-500)',
-                'gama-600': 'var(--colors-gama-600)',
-                'gama-700': 'var(--colors-gama-700)',
-                // delta
-                'delta-100': 'var(--colors-delta-100)',
-                'delta-200': 'var(--colors-delta-200)',
-                'delta-250': 'var(--colors-delta-250)',
-                'delta-300': 'var(--colors-delta-300)',
-                'delta-500': 'var(--colors-delta-500)',
-                'delta-700': 'var(--colors-delta-700)',
-                'delta-800': 'var(--colors-delta-800)',
-                'delta-900': 'var(--colors-delta-900)',
-                'delta-9000': 'var(--colors-gray-9000)',
-                //
-                'sigma-700': 'var(--colors-sigma-700)',
-                //
-                'textcolor-component': 'var(--colors-text-component)',
-                inherit: 'inherit',
+                ...twConfigs.colors,
 
-                // buttons
-                'btn-bg': 'var(--colors-btn-bg-standart)',
-                'btn-bg-active': 'var(--colors-btn-bg-active)',
-                'btn-bg-hover': 'var(--colors-btn-bg-hover)',
-                'btn-bg-disabled': 'var(--colors-btn-bg-disabled)',
-                'btn-bg-danger': 'var(--colors-btn-bg-danger)',
-                'btn-bg-danger-active': 'var(--colors-btn-bg-danger-active)',
-                // mini action buttons
-                'btn-bg-mini-action': 'var(--colors-btn-bg-mini-action)',
-                'btn-bg-mini-action-hover': 'var(--colors-btn-bg-mini-action-hover)',
-                //badge
-                'badge-bg': 'var(--colors-badge-bg)',
-                //
-                'color-active-component': 'var(--colors-active-component)',
                 //  // // // //
 
                 //  // // // // // //
@@ -122,16 +77,7 @@ module.exports = {
                 'custom-dark-green': 'hsl(var(--color-custom-dark-green) / <alpha-value>)',
                 'custom-blue-10': 'hsl(var(--color-custom-blue-10) / <alpha-value>)',
             },
-            boxShadow: {
-                blue: '0px 0px 5px #1890ff',
-                red: '0px 0px 5px red',
-                ash: '-1px 8px 18px -20px black',
-                cardbox: '0 2px 4px 0 rgba(0, 0, 0, 0.12)',
-                popper: '0 4px 15px 0 rgba(0, 0, 0, 0.44)',
-                modal: '0px 0px 16px rgba(0, 0, 0, 0.1)',
-                'mobile-box': '0 2px 4px rgba(0, 0, 0, 0.12)',
-                'x-shadow': '2px 2px 8px rgba(0, 0, 0, 0.2)',
-            },
+
             minHeight: {
                 1: '1rem',
                 1.25: '1.25rem',
@@ -141,32 +87,9 @@ module.exports = {
             minWidth: {
                 100: '100px',
             },
-            animation: {
-                'slide-in': 'slide-in 0.3s linear',
-                'slide-out': 'slide-out 0.3s linear',
-                'opacity-in': 'opacity-in 0.1s linear',
-                'opacity-in-md': 'opacity-in 0.3s linear',
-                'opacity-out': 'opacity-out 0.3s linear',
-            },
-            keyframes: {
-                'slide-in': {
-                    '0%': { margin: '0 0 0 -320px' },
-                    '100%': { margin: '0' },
-                },
-                'slide-out': {
-                    '0%': { margin: '0' },
-                    '100%': { margin: '0 0 0 -320px' },
-                },
-                'opacity-in': {
-                    '0%': { opacity: '0', height: '100%' },
-                    '100%': { opacity: '1', height: '100%' },
-                },
-                'opacity-out': {
-                    '0%': { opacity: '1', height: '100%' },
-                    '60%': { opacity: '1', height: '100%' },
-                    '100%': { opacity: '0', height: '100%' },
-                },
-            },
+            boxShadow: twConfigs.boxShadow,
+            animation: twConfigs.animation,
+            keyframes: twConfigs.keyframes,
         },
     },
     darkMode: 'media',
