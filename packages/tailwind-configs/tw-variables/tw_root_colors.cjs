@@ -36,7 +36,7 @@ module.exports = {
     'slate-800': '#4c7f93',
     //
     'blue-100': '#d1e9ff',
-    'blue-200': '#a3d3ff',
+    'blue-200': '#d7e6fd',
     'blue-300': '#74bcff',
     'blue-400': '#46a6ff',
     'blue-500': '#1890ff',

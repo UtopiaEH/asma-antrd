@@ -17,6 +17,7 @@ module.exports = {
     'gama-500': 'var(--colors-green-500)',
     'gama-600': 'var(--colors-green-600)',
     'gama-700': 'var(--colors-green-700)',
+    'gama-800': 'var(--colors-green-700)',
     //
     'delta-100': 'var(--colors-gray-100)',
     'delta-200': 'var(--colors-gray-200)',

@@ -12,11 +12,12 @@ module.exports = {
     'beta-700': 'var(--colors-salmon-700)',
     //
     'gama-100': 'var(--colors-blue-100)',
-    'gama-200': 'var(--colors-blue-500)',
+    'gama-200': 'var(--colors-blue-200)',
     'gama-300': 'var(--colors-blue-300)',
     'gama-500': 'var(--colors-blue-500)',
     'gama-600': 'var(--colors-blue-600)',
     'gama-700': 'var(--colors-blue-700)',
+    'gama-800': 'var(--colors-blue-800)',
     //
     'delta-100': 'var(--colors-gray-100)',
     'delta-200': 'var(--colors-gray-200)',
