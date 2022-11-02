@@ -45,5 +45,5 @@ module.exports = {
     'link-text-disabled': 'var(--colors-gray-200)',
 
     // custom
-    'app-directory-button-select-recipient-bg': 'var(--colors-green-500)',
+    'app-directory-button-select-recipient-bg': 'var(--colors-slate-500)',
 }
