@@ -38,11 +38,16 @@ module.exports = {
     'btn-bg-disabled': 'var(--colors-gray-200)',
     'btn-bg-danger': 'var(--colors-red-700)',
     'btn-bg-danger-active': 'var(--colors-red-500)',
+    // mini action button (delete,edit)
+    'colors-btn-bg-mini-action': 'var(--colors-gray-100)',
+    'colors-btn-bg-mini-action-hover': 'var(--colors-gama-700)',
     // link
     'link-text-hover': 'var(--colors-red-700)',
     'link-text-standart': 'var(--colors-gray-500)',
     'link-text-active': 'var(--colors-red-700)',
     'link-text-disabled': 'var(--colors-gray-200)',
+    // badge
+    'colors-badge-bg': 'var(--colors-red-700)',
 
     // custom
     'app-directory-button-select-recipient-bg': 'var(--colors-slate-500)',
