@@ -47,7 +47,7 @@ module.exports = {
     'link-text-active': 'var(--colors-red-700)',
     'link-text-disabled': 'var(--colors-gray-200)',
     // badge
-    'colors-badge-bg': 'var(--colors-red-700)',
+    'badge-bg': 'var(--colors-red-700)',
 
     // custom
     'app-directory-button-select-recipient-bg': 'var(--colors-slate-500)',

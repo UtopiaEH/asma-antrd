@@ -47,8 +47,18 @@ module.exports = {
     'link-text-active': 'var(--colors-slate-800)',
     'link-text-disabled': 'var(--colors-green-900)',
     // badge
-    'colors-badge-bg': 'var(--colors-slate-600)',
+    'badge-bg': 'var(--colors-slate-600)',
 
     // custom
     'app-directory-button-select-recipient-bg': 'var(--colors-blue-200)',
 }
+
+// [data-theme='default'] {
+//     --topbar-color-badge-bg: var(--colors-green-400);
+//     --topbar-color-badge-text: var(--colors-text);
+// }
+
+// [data-theme='fretex'] {
+//     --topbar-color-badge-bg: var(--colors-red-700);
+//     --topbar-color-badge-text: #ffffff;
+// }
