@@ -12,5 +12,9 @@ const style = {
 }
 
 export const RdBadge: React.FC<IRdBadgeProps> = (props) => {
-    return <Badge {...props} style={style} />
+    return (
+        <div className='h-[30px] w-[30px] overflow-hidden'>
+            <Badge {...props} style={style} />
+        </div>
+    )
 }
