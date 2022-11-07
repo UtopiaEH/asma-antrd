@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
-import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
+// import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 import dts from 'vite-plugin-dts'
 import tsConfigPaths from 'vite-tsconfig-paths'
 
@@ -16,7 +16,7 @@ export default defineConfig(() => ({
             insertTypesEntry: true,
             include: resolve(__dirname, 'src'),
         }),
-        cssInjectedByJsPlugin({ topExecutionPriority: false, styleId: 'antrd' }),
+        // cssInjectedByJsPlugin({ topExecutionPriority: false, styleId: 'antrd' }),
     ],
     resolve: {
         alias: {
