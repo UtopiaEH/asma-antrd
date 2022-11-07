@@ -28,10 +28,19 @@ export default defineConfig(() => ({
         manifest: true,
         minify: false,
         lib: {
-            entry: resolve(__dirname, 'src/index.ts'),
+            entry: [
+                resolve(__dirname, 'src/index.ts'),
+                resolve(__dirname, 'src/rd-components/badges/rd-badge/RdBadge.tsx'),
+            ],
             name: 'asma-antrd',
-            formats: ['es', 'umd'],
-            fileName: (format) => `asma-antrd.${format}.js`,
+            formats: ['es'],
+            // formats: ['es', 'umd'],
+            fileName: (format, entry) => {
+                if (entry.includes('RdBadge')) {
+                    return `rd-badge.${format}.js`
+                }
+                return `asma-antrd.${format}.js`
+            },
         },
         rollupOptions: {
             external: ['react', 'react-dom'],
