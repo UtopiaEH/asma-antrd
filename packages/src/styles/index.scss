@@ -17,5 +17,10 @@
 @import './custom-utilities.scss';
 
 
-// antd scss must be after tailwind!
+// antd scss must be after tailwind
 @import './antd.scss';
+
+// important for mfe widgets rendering
+#root {
+    @apply bg-transparent;
+}
