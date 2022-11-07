@@ -1,7 +1,7 @@
 {
     "name": "asma-antrd",
     "private": false,
-    "version": "0.0.80",
+    "version": "0.0.81",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -83,16 +83,16 @@
         "react": "^18.*",
         "react-dom": "^18.*"
     },
-    "main": "./dist/asma-antrd.umd.js",
-    "module": "./dist/asma-antrd.es.js",
+    "main": "./dist/index.es.js",
+    "module": "./dist/index.es.js",
     "types": "./dist/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/asma-antrd.es.js"
+            "import": "./dist/index.es.js"
         },
-        "./dist/rd-badge.es.js": "./dist/rd-badge.es.js",
         "./dist/style.css": "./dist/style.css",
-        "./tailwind-configs/tw_configs.cjs": "./tailwind-configs/tw_configs.cjs"
+        "./tailwind-configs/tw_configs.cjs": "./tailwind-configs/tw_configs.cjs",
+        "./dist/rd-components/badges/rd-badge": "./dist/rd-components/badges/rd-badge/RdBadge.es.js"
     },
     "lint-staged": {
         "src/**/*.{js,jsx,ts,tsx}": [

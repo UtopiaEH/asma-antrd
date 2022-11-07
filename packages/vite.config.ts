@@ -30,21 +30,25 @@ export default defineConfig(() => ({
         lib: {
             entry: [
                 resolve(__dirname, 'src/index.ts'),
-                resolve(__dirname, 'src/rd-components/badges/rd-badge/RdBadge.tsx'),
+                // resolve(__dirname, 'src/rd-components/badges/rd-badge/RdBadge.tsx'),
             ],
             name: 'asma-antrd',
             formats: ['es'],
             // formats: ['es', 'umd'],
             fileName: (format, entry) => {
-                if (entry.includes('RdBadge')) {
-                    return `rd-badge.${format}.js`
-                }
-                return `asma-antrd.${format}.js`
+                // if (entry.includes('RdBadge')) {
+                //     return `rd-badge/rd-badge.${format}.js`
+                // }
+                return `${entry}.${format}.js`
             },
         },
         rollupOptions: {
             external: ['react', 'react-dom'],
             output: {
+                format: 'es',
+                dir: 'dist',
+                preserveModules: true,
+                preserveModulesRoot: 'src',
                 globals: {
                     react: 'React',
                     'react-dom': 'ReactDOM',

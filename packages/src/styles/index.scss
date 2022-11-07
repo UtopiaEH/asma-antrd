@@ -15,3 +15,7 @@
 
 @import 'tailwindcss/utilities';
 @import './custom-utilities.scss';
+
+
+// antd scss must be after tailwind!
+@import './antd.scss';
