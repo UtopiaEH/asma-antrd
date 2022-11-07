@@ -51,6 +51,9 @@ module.exports = {
 
     // custom
     'app-directory-button-select-recipient-bg': 'var(--colors-blue-200)',
+
+    //
+    'btn-task-status': 'var(--colors-slate-600)',
 }
 
 // [data-theme='default'] {
