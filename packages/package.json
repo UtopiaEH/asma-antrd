@@ -1,7 +1,7 @@
 {
     "name": "asma-antrd",
     "private": false,
-    "version": "0.0.76",
+    "version": "0.0.77",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -92,7 +92,8 @@
             "require": "./dist/asma-antrd.umd.js"
         },
         "./dist/style.css": "./dist/style.css",
-        "./tailwind-configs/tw_configs.cjs": "./tailwind-configs/tw_configs.cjs"
+        "./tailwind-configs/tw_configs.cjs": "./tailwind-configs/tw_configs.cjs",
+        "./dist/rd-components/badges/rd-badge": "./dist/rd-components/badges/rd-badge"
     },
     "lint-staged": {
         "src/**/*.{js,jsx,ts,tsx}": [
