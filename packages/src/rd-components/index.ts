@@ -1,3 +1,4 @@
+export * from './badges/rd-badge'
 export * from './inputs/rd-input'
 export * from './inputs/rd-input-readonly'
 export * from './modals/'
