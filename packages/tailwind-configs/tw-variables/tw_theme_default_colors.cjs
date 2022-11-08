@@ -54,6 +54,9 @@ module.exports = {
 
     //
     'btn-task-status': 'var(--colors-slate-600)',
+
+    //
+    'chat-ticket-message-bg': 'var(--colors-gama-500)',
 }
 
 // [data-theme='default'] {
