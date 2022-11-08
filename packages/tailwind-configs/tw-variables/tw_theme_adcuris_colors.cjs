@@ -45,5 +45,5 @@ module.exports = {
     'link-text-disabled': 'var(--colors-green-900)',
 
     //
-    'chat-ticket-message-bg': 'var(--colors-gama-500)',
+    'chat-ticket-message-bg': 'var(--colors-blue-200)',
 }
