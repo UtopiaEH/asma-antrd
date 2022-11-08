@@ -12,7 +12,7 @@ module.exports = {
     'beta-700': 'var(--colors-salmon-700)',
     //
     'gama-100': 'var(--colors-slate-100)',
-    'gama-200': 'var(--colors-blue-200)',
+    'gama-200': 'var(--colors-slate-200)',
     'gama-300': 'var(--colors-slate-300)',
     'gama-500': 'var(--colors-slate-500)',
     'gama-600': 'var(--colors-slate-600)',
@@ -56,7 +56,7 @@ module.exports = {
     'btn-task-status': 'var(--colors-slate-600)',
 
     //
-    'chat-ticket-message-bg': 'var(--colors-gama-500)',
+    'chat-ticket-message-bg': 'var(--colors-blue-200)',
 }
 
 // [data-theme='default'] {

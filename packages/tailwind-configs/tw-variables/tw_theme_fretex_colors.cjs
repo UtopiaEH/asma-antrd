@@ -55,5 +55,5 @@ module.exports = {
     //
     'btn-task-status': 'var(--colors-green-150)',
 
-    'chat-ticket-message-bg': 'var(--colors-alpha-500)',
+    'chat-ticket-message-bg': 'var(--colors-blue-200)',
 }
