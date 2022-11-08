@@ -8,4 +8,5 @@ module.exports = {
     'cardbox--2': '0 2px 4px 0 rgba(0, 0, 0, 0.1)',
     popper: '0 4px 15px 0 rgba(0, 0, 0, 0.44)',
     modal: '0px 0px 16px rgba(0, 0, 0, 0.1)',
+    'mobile-box': '0 2px 4px rgba(0, 0, 0, 0.12)',
 }
