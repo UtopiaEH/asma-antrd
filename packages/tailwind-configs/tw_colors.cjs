@@ -43,4 +43,7 @@ module.exports = {
     //badge
     'badge-bg': 'var(--colors-badge-bg)',
     //
+
+    // chat
+    'chat-ticket-message-bg': 'var(--colors-chat-ticket-message-bg)',
 }
